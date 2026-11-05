@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Конвертер валют</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <h1>Конвертер валют</h1>
+
+    <label>Сумма</label>
+    <input id="amount" type="number" value="100">
+
+    <label>Из</label>
+    <select id="from"> 
+      <option value="BYN">BYN — Белорусский рубль</option>
+      <option value="RUB">RUB — Российский рубль</option>
+      <option value="USD">USD — Доллар США</option>
+      <option value="EUR">EUR — Евро</option>
+      <option value="CNY">CNY — Китайский юань</option>
+      <option value="PLN">PLN — Польский злотый</option>
+      <option value="UAH">UAH — Украинская гривна</option>
+      <option value="KZT">KZT — Казахстанский тенге</option>
+      <option value="GBP">GBP — Фунт стерлингов</option>
+      <option value="TRY">TRY — Турецкая лира</option>
+    </select>
+
+    <label>В</label>
+    <select id="to">
+      <option value="USD">USD — Доллар США</option>
+      <option value="BYN">BYN — Белорусский рубль</option>
+      <option value="RUB">RUB — Российский рубль</option>
+      <option value="EUR">EUR — Евро</option>
+      <option value="CNY">CNY — Китайский юань</option>
+      <option value="PLN">PLN — Польский злотый</option>
+      <option value="UAH">UAH — Украинская гривна</option>
+      <option value="KZT">KZT — Казахстанский тенге</option>
+      <option value="GBP">GBP — Фунт стерлингов</option>
+      <option value="TRY">TRY — Турецкая лира</option>
+    </select>
+
+    <button onclick="convert()">Конвертировать</button>
+
+    <div id="result">Выберите валюту и нажмите «Конвертировать»</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
